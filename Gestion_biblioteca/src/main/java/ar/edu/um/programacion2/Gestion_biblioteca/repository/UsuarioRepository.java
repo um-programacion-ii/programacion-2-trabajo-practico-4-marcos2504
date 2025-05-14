@@ -1,0 +1,12 @@
+package ar.edu.um.programacion2.Gestion_biblioteca.repository;
+import ar.edu.um.programacion2.Gestion_biblioteca.model.Usuario;
+import java.util.List;
+import java.util.Optional;
+
+public interface UsuarioRepository {
+    Usuario save(Usuario usuario);
+    Optional<Usuario> findById(Long id);
+    List<Usuario> findAll();
+    void deleteById(Long id);
+    boolean existsById(Long id);
+}
