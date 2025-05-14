@@ -8,10 +8,10 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class PrestamoServiceImpl implements PrestamoService {
+public class PrestamoServiceImp implements PrestamoService {
     private final PrestamoRepository prestamoRepository;
 
-    public PrestamoServiceImpl(PrestamoRepository prestamoRepository) {
+    public PrestamoServiceImp(PrestamoRepository prestamoRepository) {
         this.prestamoRepository = prestamoRepository;
     }
 
