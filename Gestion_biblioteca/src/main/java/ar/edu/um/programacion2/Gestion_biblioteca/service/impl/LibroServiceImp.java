@@ -6,10 +6,10 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class LibroServiceImpl implements LibroService {
+public class LibroServiceImp implements LibroService {
     private final LibroRepository libroRepository;
 
-    public LibroServiceImpl(LibroRepository libroRepository) {
+    public LibroServiceImp(LibroRepository libroRepository) {
         this.libroRepository = libroRepository;
     }
 
