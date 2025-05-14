@@ -12,10 +12,42 @@ Proyecto de gestión de biblioteca que permite administrar usuarios, libros y pr
 
 ## 🧑‍💻 Endpoints principales
 
-- `GET /api/libros` → Listar libros
-- `POST /api/usuarios` → Crear usuario
-- `PUT /api/prestamos/{id}` → Actualizar préstamo
--
+## 📡 Endpoints de la API
+
+### 📘 Libros (`/api/libros`)
+
+| Método | Endpoint            | Descripción                         |
+|--------|---------------------|-------------------------------------|
+| GET    | `/api/libros`       | Obtener todos los libros            |
+| GET    | `/api/libros/{id}`  | Obtener un libro por su ID          |
+| POST   | `/api/libros`       | Crear un nuevo libro                |
+| PUT    | `/api/libros/{id}`  | Actualizar un libro existente       |
+| DELETE | `/api/libros/{id}`  | Eliminar un libro por su ID         |
+
+---
+
+### 👤 Usuarios (`/api/usuarios`)
+
+| Método | Endpoint              | Descripción                          |
+|--------|-----------------------|--------------------------------------|
+| GET    | `/api/usuarios`       | Obtener todos los usuarios           |
+| GET    | `/api/usuarios/{id}`  | Obtener un usuario por su ID         |
+| POST   | `/api/usuarios`       | Crear un nuevo usuario               |
+| PUT    | `/api/usuarios/{id}`  | Actualizar un usuario existente      |
+| DELETE | `/api/usuarios/{id}`  | Eliminar un usuario por su ID        |
+
+---
+
+### 📚 Préstamos (`/api/prestamos`)
+
+| Método | Endpoint               | Descripción                          |
+|--------|------------------------|--------------------------------------|
+| GET    | `/api/prestamos`       | Obtener todos los préstamos          |
+| GET    | `/api/prestamos/{id}`  | Obtener un préstamo por su ID        |
+| POST   | `/api/prestamos`       | Crear un nuevo préstamo              |
+| PUT    | `/api/prestamos/{id}`  | Actualizar un préstamo existente     |
+| DELETE | `/api/prestamos/{id}`  | Eliminar un préstamo por su ID       |
+
 
 ## ⚙️ Cómo correr el proyecto
 
