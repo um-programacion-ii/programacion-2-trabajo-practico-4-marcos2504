@@ -17,7 +17,7 @@ public class LibroServiceImp implements LibroService {
     @Override
     public Libro buscarPorIsbn(String isbn) {
         return libroRepository.findByIsbn(isbn)
-                .orElseThrow(() -> new RuntimeException("Libro no encontrado"));
+                .orElseThrow(() -> new LibroNoEncontradoException(isbn));
     }
 
     @Override
