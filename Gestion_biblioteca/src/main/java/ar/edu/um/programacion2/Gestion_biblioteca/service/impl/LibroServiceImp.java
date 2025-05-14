@@ -1,4 +1,5 @@
 package ar.edu.um.programacion2.Gestion_biblioteca.service.impl;
+import ar.edu.um.programacion2.Gestion_biblioteca.exception.LibroNoEncontradoException;
 import ar.edu.um.programacion2.Gestion_biblioteca.model.Libro;
 import ar.edu.um.programacion2.Gestion_biblioteca.repository.LibroRepository;
 import ar.edu.um.programacion2.Gestion_biblioteca.service.LibroService;
@@ -42,5 +43,11 @@ public class LibroServiceImp implements LibroService {
         libro.setId(id);
         return libroRepository.save(libro);
     }
+    @Override
+    public Libro buscarPorId(Long id) {
+        return libroRepository.findById(id)
+                .orElseThrow(() -> new LibroNoEncontradoException(id));
+    }
+
 }
 
